@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container timer">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div id="timer">15 saniye</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-heading">
+                <h1 class="takim-home" id="takim-home">HOME</h1>
+            </div>
+            <div class="col col-display" id="scoreHome">0</div>
+            <div class="col col-md-12">
+                <div class="col col-md-3 col-points">
+                    <button class="add" onClick="addScore(1,'scoreHome')">+1</button>
+                    <button class="add" onClick="addScore(2,'scoreHome')">+2</button>
+                    <button class="add" onClick="addScore(3,'scoreHome')">+3</button>
+                </div>
+                <div class="col col-md-3 col-points">
+                    <button class="remove" onClick="removeScore(1,'scoreHome')">-1</button>
+                    <button class="remove" onClick="removeScore(2,'scoreHome')">-2</button>
+                    <button class="remove" onClick="removeScore(3,'scoreHome')">-3</button>
+                </div>
+                <div class="col col-md-3 col-points">
+                    <button class="setScoreHome" onclick="setScore('scoreHome')">Basket Sayısı Yenile</button>
+                    <button class="changeNameHome" onclick="changeTeam('takim-home')">Takım Adını Değiştir</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-heading">
+                <h1 class="takim-guest " id="takim-guest">GUEST</h1>
+            </div>
+            <div class="col col-display" id="scoreGuest">0</div>
+            <div class="col-md-12">
+                <div class="col col-md-3 col-points">
+                    <button class="add" onClick="addScore(1,'scoreGuest')">+1</button>
+                    <button class="add" onClick="addScore(2,'scoreGuest')">+2</button>
+                    <button class="add" onClick="addScore(3,'scoreGuest')">+3</button>
+                </div>
+                <div class="col col-md-3 col-points">
+                    <button class="remove" onClick="removeScore(1,'scoreGuest')">-1</button>
+                    <button class="remove" onClick="removeScore(2,'scoreGuest')">-2</button>
+                    <button class="remove" onClick="removeScore(3,'scoreGuest')">-3</button>
+                </div>
+                <div class="col col-md-3 col-points">
+                    <button class="setScoreGuest" onclick="setScore('scoreGuest')">Basket Sayısı Yenile</button>
+                    <button class="changeNameGuest" onclick="changeTeam('takim-guest')">Takım Adını Değiştir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
