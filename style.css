@@ -43,7 +43,7 @@ body {
 .col-display {
   width: 155px;
   height: 120px;
-  background: rgb(4, 41, 86);
+  background: rgb(16, 49, 69);
   border-radius: 5px;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +101,7 @@ body {
   background: transparent;
 }
 .timer {
-  background-color: rgb(4, 41, 86);
+  background-color: rgb(16, 49, 69);
   color: rgb(238, 11, 56);
   min-width: 200px;
   position: absolute;
