@@ -16,6 +16,7 @@ function removeScore(val, element) {
     document.getElementById(element).textContent = count;
   }
 }
+
 function addScore(val, element) {
   count = Number(document.getElementById(element).textContent);
   count += val;
@@ -24,6 +25,17 @@ function addScore(val, element) {
   clearInterval(intervalId);
   counter("timer");
 }
+function setScore(element) {
+  count = Number(prompt("Yeni basket sayısını girin :"));
+
+  if (isNaN(count)) {
+    alert("Lütfen geçerli bir sayı girin.");
+    return;
+  }
+
+  document.getElementById(element).textContent = count;
+}
+
 function counter(element) {
   let counterValue = 15;
   let intervalId = setInterval(function () {
